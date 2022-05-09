@@ -1,0 +1,83 @@
+# Real World Python
+
+#### A place to share and consult the projects contained in the book Real World Python by [Lee Vaughan](https://github.com/rlvaugh/Real_World_Python).
+
+#### You can find the book here: [Real World Python](https://nostarch.com/real-world-python)
+
+## Progress
+
+- [x] Chapter 1: Saving Shipwrecked Sailors with Bayes’ Rule
+     - [x] Project #1: Search and Rescue
+     - [x] Challenge Project: Smarter Searches
+     - [x] Challenge Project: Finding the Best Strategy with MCS
+     - [x] Challenge Project: Calculating the Probability of Detection
+- [ ] Chapter 2: Attributing Authorship with Stylometry
+     - [ ] Project #2: The Hound, The War, and The Lost World
+     - [ ] Practice Project: Hunting the Hound with Dispersion
+     - [ ] Practice Project: Punctuation Heatmap
+     - [ ] Challenge Project: Fixing Frequency
+- [ ] Chapter 3: Summarizing Speeches with Natural Language Processing
+     - [ ] Project #3: I Have a Dream . . . to Summarize Speeches!
+     - [ ] Project #4: Summarizing Speeches with gensim
+     - [ ] Project #5: Summarizing Text with Word Clouds 
+     - [ ] Challenge Project: Game Night
+     - [ ] Challenge Project: Summarizing Summaries
+     - [ ] Challenge Project: Summarizing a Novel
+     - [ ] Challenge Project: It’s Not Just What You Say, It’s How You Say It!
+- [ ] Chapter 4: Sending Super-Secret Messages with a Book Cipher
+     - [ ] Project #6: The Digital Key to Rebecca
+     - [ ] Practice Project: Charting the Characters
+     - [ ] Practice Project: Sending Secrets the WWII Way
+- [ ] Chapter 5: Finding Pluto
+     - [ ] Project #7: Replicating a Blink Comparator
+     - [ ] Project #8: Detecting Astronomical Transients with Image Differencing 
+     - [ ] Practice Project: Plotting the Orbital Path
+     - [ ] Practice Project: What’s the Difference?
+     - [ ] Challenge Project: Counting Stars
+- [ ] Chapter 6: Winning the Moon Race with Apollo 8
+     - [ ] Project #9: To the Moon with Apollo 8!
+     - [ ] Practice Project: Simulating a Search Pattern
+     - [ ] Practice Project: Start Me Up!
+     - [ ] Practice Project: Shut Me Down!
+     - [ ] Challenge Project: True-Scale Simulation
+     - [ ] Challenge Project: The Real Apollo 8
+- [ ] Chapter 7: Selecting Martian Landing Sites
+     - [ ] Project #10: Selecting Martian Landing Sites
+     - [ ] Practice Project: Confirming That Drawings Become Part of an Image
+     - [ ] Practice Project: Extracting an Elevation Profile
+     - [ ] Practice Project: Plotting in 3D
+     - [ ] Practice Project: Mixing Maps
+     - [ ] Challenge Project: Making It Three in a Row
+     - [ ] Challenge Project: Wrapping Rectangles
+- [ ] Chapter 8: Detecting Distant Exoplanets
+     - [ ] Project #11: Simulating an Exoplanet Transit
+     - [ ] Project #12: Imaging Exoplanets 
+     - [ ] Practice Project: Detecting Alien Megastructures
+     - [ ] Practice Project: Detecting Asteroid Transits
+     - [ ] Practice Project: Incorporating Limb Darkening
+     - [ ] Practice Project: Detecting Starspots
+     - [ ] Practice Project: Detecting an Alien Armada
+     - [ ] Practice Project: Detecting a Planet with a Moon
+     - [ ] Practice Project: Measuring the Length of an Exoplanet’s Day
+     - [ ] Challenge Project: Generating a Dynamic Light Curve
+- [ ] Chapter 9: Identifying Friend or Foe
+     - [ ] Project #13: Programming a Robot Sentry Gun
+     - [ ] Practice Project: Blurring Faces
+     - [ ] Challenge Project: Detecting Cat Faces
+- [ ] Chapter 10: Restricting Access with Face Recognition
+     - [ ] Project #14: Restricting Access to the Alien Artifact
+     - [ ] Challenge Project: Adding a Password and Video Capture
+     - [ ] Challenge Project: Look-Alikes and Twins
+     - [ ] Challenge Project: Time Machine
+- [ ] Chapter 11: Creating an Interactive Zombie Escape Map
+     - [ ] Project #15: Visualizing Population Density with a Choropleth Map
+     - [ ] Challenge Project: Mapping US Population Change
+- [ ] Chapter 12: Are We Living in a Computer Simulation?
+     - [ ] Project #16: Life, the Universe, and Yertle’s Pond
+     - [ ] Challenge Project: Finding a Safe Space
+     - [ ] Challenge Project: Here Comes the Sun
+     - [ ] Challenge Project: Seeing Through a Dog’s Eyes
+     - [ ] Challenge Project: Customized Word Search
+     - [ ] Challenge Project: Simplifying a Celebration Slideshow
+     - [ ] Challenge Project: What a Tangled Web We Weave
+     - [ ] Challenge Project: Go Tell It on the Mountain
