@@ -108,7 +108,7 @@ class Search:
 # Monte Carlo for 1+2, 1+3, 2+3
 
 
-def main_split():
+def main_split(attempt):
     app = Search('Cape_Python')
     app.sailor_final_location(num_search_areas=3)
     search_num = 1
@@ -166,4 +166,4 @@ def main_split():
 
 
 if __name__ == '__main__':
-    main_split()
+    main_split(1)
