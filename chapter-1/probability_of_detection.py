@@ -108,9 +108,6 @@ class Search:
         '''
         Designates a decimal value that represents the search effectiveness for each search area.
         '''
-        self.psep1 = random.uniform(0.15, 0.93)
-        self.psep2 = random.uniform(0.15, 0.93)
-        self.psep3 = random.uniform(0.15, 0.93)
 
         self.sep1 = random.triangular(0.2, self.psep1)
         self.sep2 = random.triangular(0.2, self.psep2)
