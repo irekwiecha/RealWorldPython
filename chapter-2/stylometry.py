@@ -18,8 +18,8 @@ def main():
     word_length_test(words_by_author, len_shortest_corpus)
     stopwords_test(words_by_author, len_shortest_corpus)
     parts_of_speech_test(words_by_author, len_shortest_corpus)
-    # vocab_test(words_by_author)
-    # jaccard_test(words_by_author, len_shortest_corpus)
+    vocab_test(words_by_author)
+    jaccard_test(words_by_author, len_shortest_corpus)
 
 
 def text_to_string(filename):
@@ -30,7 +30,8 @@ def text_to_string(filename):
 
 def make_word_dict(strings_by_author):
     """
-    Returns a dictionary containing lists of tokens in the form of words assigned to the corresponding author.
+    Returns a dictionary containing lists of tokens
+    in the form of words assigned to the corresponding author.
     """
     words_by_author = dict()
     for author in strings_by_author:
@@ -110,8 +111,7 @@ def stopwords_test(words_by_author, len_shortest_corpus):
 
 def parts_of_speech_test(words_by_author, len_shortest_corpus):
     """
-    Creates a graph of the author's use of parts of speech,
-    such as nouns, verbs, or adverbs.
+    Creates a chart of the part of speech used by the author
     """
     by_author_pos_freq_dist = dict()
     plt.figure(3)
@@ -133,6 +133,55 @@ def parts_of_speech_test(words_by_author, len_shortest_corpus):
     plt.ylabel("Number of appearances")
     plt.xlabel("Parts of speech")
     plt.show(block=True)
+
+
+def vocab_test(words_by_author):
+    """
+    Compares the vocabulary used by the authors using the chi-square test
+    """
+    chisquared_by_author = dict()
+    for author in words_by_author:
+        if author != "unknown":
+            combined_corpus = words_by_author[author] + words_by_author["unknown"]
+            author_proportion = len(words_by_author[author]) / len(combined_corpus)
+            combined_freq_dist = nltk.FreqDist(combined_corpus)
+            most_common_words = list(combined_freq_dist.most_common(1000))
+            chisquared = 0
+            for word, combined_count in most_common_words:
+                observed_count_author = words_by_author[author].count(word)
+                expected_count_author = combined_count * author_proportion
+                chisquared += (
+                    observed_count_author - expected_count_author
+                ) ** 2 / expected_count_author
+                chisquared_by_author[author] = chisquared
+            print(f"Chi-square for key {author} = {chisquared:.1f}")
+    most_likely_author = min(chisquared_by_author, key=chisquared_by_author.get)
+    print(
+        f"Considering the vocabulary, the most likely author is: {most_likely_author.capitalize()}"
+    )
+
+
+def jaccard_test(words_by_author, len_shortest_corpus):
+    """
+    Calculates Jaccard's similarity index between
+    the disputed fragment and fragments of known authorship.
+    """
+    jaccard_by_author = dict()
+    unique_words_unknown = set(words_by_author["unknown"][:len_shortest_corpus])
+    authors = (author for author in words_by_author if author != "unknown")
+    for author in authors:
+        unique_words_author = set(words_by_author[author][:len_shortest_corpus])
+        shared_words = unique_words_author.intersection(unique_words_unknown)
+        jaccadr_sim = float(len(shared_words)) / (
+            len(unique_words_author) + len(unique_words_unknown) - len(shared_words)
+        )
+        jaccard_by_author[author] = jaccadr_sim
+        print(f"Jaccard index for the author {author.capitalize()} = {jaccadr_sim:.4f}")
+
+    most_likely_author = max(jaccard_by_author, key=jaccard_by_author.get)
+    print(
+        f"Considering the similarity, the most likely author is: {most_likely_author.capitalize()}"
+    )
 
 
 if __name__ == "__main__":
