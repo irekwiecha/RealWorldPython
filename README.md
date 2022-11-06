@@ -11,10 +11,10 @@
      - [x] Challenge Project: Smarter Searches
      - [x] Challenge Project: Finding the Best Strategy with MCS
      - [x] Challenge Project: Calculating the Probability of Detection
-- [ ] Chapter 2: Attributing Authorship with Stylometry
-     - [ ] Project #2: The Hound, The War, and The Lost World
-     - [ ] Practice Project: Hunting the Hound with Dispersion
-     - [ ] Practice Project: Punctuation Heatmap
+- [x] Chapter 2: Attributing Authorship with Stylometry
+     - [x] Project #2: The Hound, The War, and The Lost World
+     - [x] Practice Project: Hunting the Hound with Dispersion
+     - [x] Practice Project: Punctuation Heatmap
      - [ ] Challenge Project: Fixing Frequency
 - [ ] Chapter 3: Summarizing Speeches with Natural Language Processing
      - [ ] Project #3: I Have a Dream . . . to Summarize Speeches!
