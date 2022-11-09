@@ -15,7 +15,7 @@
      - [x] Project #2: The Hound, The War, and The Lost World
      - [x] Practice Project: Hunting the Hound with Dispersion
      - [x] Practice Project: Punctuation Heatmap
-     - [ ] Challenge Project: Fixing Frequency
+     - [x] Challenge Project: Fixing Frequency
 - [ ] Chapter 3: Summarizing Speeches with Natural Language Processing
      - [ ] Project #3: I Have a Dream . . . to Summarize Speeches!
      - [ ] Project #4: Summarizing Speeches with gensim
